@@ -8,8 +8,8 @@
           <li><router-link :to="{path:'/question'}">Agregar Pregunta</router-link></li>
         </ul>
          <ul id="nav-mobile" class="right hide-on-med-and-down">
-             <form class="form-inline my-2 my-lg-0">
-                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="Salir" value="Log out">
+             <form class="form-inline my-2 my-lg-0" @submit.prevent="Salir">
+                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Log out">
             </form>
         </ul>
         
